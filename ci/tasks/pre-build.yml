@@ -11,4 +11,6 @@ inputs:
     - name: subject
 
 run:
-  path: subject/ci/pre-build.sh
+#   path: subject/ci/pre-build.sh
+    path: echo
+    args: [hello world]
