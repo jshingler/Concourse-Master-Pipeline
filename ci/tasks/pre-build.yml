@@ -5,13 +5,9 @@ image_resource:
   type: docker-image
   source: {repository: busybox}
 
-# inputs:
-#   - name: task-scripts
 inputs:
     - name: subject
     - name: master-pipeline
 
 run:
   path: ./master-pipeline/ci/tasks/pre-build.sh
-    # path: echo
-    # args: [hello world]
