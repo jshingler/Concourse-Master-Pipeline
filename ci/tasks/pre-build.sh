@@ -4,4 +4,6 @@ echo "Master-Pipeline - pre-build.sh"
 if [ -x subject/ci/pre-build.sh ]
 then
    subject/ci/pre-build.sh
+else
+    echo "Nothing to execute"
 fi
