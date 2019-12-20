@@ -8,7 +8,7 @@ echo "Concourse API target ${fly_target}"
 echo "Tutorial $(basename $DIR)"
 
 pushd $DIR
-  fly -t ${fly_target} set-pipeline -p mp-sample-app -c ci/pipeline.yml --var "subject=Concourse-Sample-App" -n
+  fly -t ${fly_target} set-pipeline -p mp-sample-app -c ci/pipeline.yml -l Concourse-Sample-App.yml -n
   fly -t ${fly_target} unpause-pipeline -p mp-sample-app
   fly -t ${fly_target} trigger-job -w -j mp-sample-app/build
 popd
