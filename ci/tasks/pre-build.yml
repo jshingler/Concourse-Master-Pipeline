@@ -12,6 +12,6 @@ inputs:
     - name: master-pipeline
 
 run:
-  path: ./subject/ci/pre-build.sh
+  path: ./master-pipeline/ci/tasks/pre-build.sh
     # path: echo
     # args: [hello world]
