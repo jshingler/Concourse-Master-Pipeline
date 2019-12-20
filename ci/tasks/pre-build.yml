@@ -12,5 +12,7 @@ inputs:
 
 run:
 #   path: subject/ci/pre-build.sh
-    path: echo
-    args: [hello world]
+    # path: echo
+    # args: [hello world]
+    path: sh
+    args: [echo "hi";pwd;ls -la]
