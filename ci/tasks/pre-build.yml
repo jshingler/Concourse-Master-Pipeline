@@ -7,6 +7,8 @@ image_resource:
 
 # inputs:
 #   - name: task-scripts
+inputs:
+    - name: subject
 
 run:
-  path: ../subject/ci/pre-build.sh
+  path: subject/ci/pre-build.sh
