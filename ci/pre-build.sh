@@ -1,8 +1,10 @@
-#!/bin/bash
+#!/bin/sh
 
-echo "JIM"
-pwd
-ls -la
-cd ..
-pwd
-ls -la
+uname -a
+
+# echo "JIM"
+# pwd
+# ls -la
+# cd ..
+# pwd
+# ls -la
