@@ -29,7 +29,10 @@ echo "-- Checking for Build Type (Gradlew/mvnw)"
 if [ -x subject/gradlew ]
 then
    echo "-- Found Gradle Build"
+   pwd
+   ls -la
    cd subject
+   pwd
    ls -la
    ./gradlew build
    cd ..
