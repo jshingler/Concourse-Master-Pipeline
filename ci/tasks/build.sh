@@ -11,7 +11,8 @@ pwd
 
 # Pre-Build
 # =============================================
-echo "\nCheck for Pre-Build"
+echo ""
+echo "Check for Pre-Build"
 echo "============================================="
 echo "-- Master-Pipeline - pre-build.sh"
 if [ -x subject/ci/pre-build.sh ]
@@ -23,7 +24,8 @@ fi
 
 # Build
 # =============================================
-echo "\nBuild"
+echo ""
+echo "Build"
 echo "============================================="
 echo "-- Checking for Build Type (Gradlew/mvnw)"
 if [ -x subject/gradlew ]
@@ -44,7 +46,8 @@ fi
 
 # Post-Build
 # =============================================
-echo "\nCheck for Post-Build"
+echo ""
+echo "Check for Post-Build"
 echo "============================================="
 echo "-- Master-Pipeline - post-build.sh"
 if [ -x subject/ci/post-build.sh ]
