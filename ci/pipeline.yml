@@ -15,9 +15,9 @@ jobs:
     plan:
       - get: master-pipeline
       - get: subject
-      - task: pre-build
-        file: master-pipeline/ci/tasks/pre-build.yml
+      # - task: pre-build
+      #   file: master-pipeline/ci/tasks/pre-build.yml
       - task: build
         file: master-pipeline/ci/tasks/build.yml
-      - task: pre-build
-        file: master-pipeline/ci/tasks/post-build.yml
+      # - task: pre-build
+      #   file: master-pipeline/ci/tasks/post-build.yml
