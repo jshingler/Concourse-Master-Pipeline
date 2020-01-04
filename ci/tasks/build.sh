@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -x
+# set -x
 
 echo "B-U-I-L-D"
 pwd
@@ -29,17 +29,15 @@ echo "-- Checking for Build Type (Gradlew/mvnw)"
 if [ -x subject/gradlew ]
 then
    echo "-- Found Gradle Build"
-   pwd
-   ls -la
    cd subject
-   pwd
-   ls -la
    ./gradlew build
    cd ..
 elif [ -x subject/mvnw ]
 then
     echo "-- Found Maven Build"
-    subject/mvnw
+    cd subject
+    ./mvnw test
+    cd ..
 else
     echo "-- GradleW and MvnW not found Nothing to Build"
 fi
