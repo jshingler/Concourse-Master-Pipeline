@@ -30,7 +30,8 @@ if [ -x subject/gradlew ]
 then
    echo "-- Found Gradle Build"
    cd subject
-   gradlew build
+   ls -la
+   ./gradlew build
    cd ..
 elif [ -x subject/mvnw ]
 then
